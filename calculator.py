@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-Wages = 0
+Wages = 1
 Wages = sys.argv[1]
 
 if __name__ == '__main__':
