@@ -4,13 +4,15 @@ Wages = int(sys.argv[1])
 
 if __name__ == '__main__':
     taxable_income = Wages - 3500
-    if 0 < taxable_incom < 1500:
+    if 0 < taxable_income < 1500:
         tax_rate = 0.03
-        tax_amount_payable = taxalbe_income * tax_rate - 0
+        tax_amount_payable = taxable_income * tax_rate - 0
         print(format(tax_amount_payable,".2f"))
+    else:
+        print("abc")
+"""
     elif (1500  <= taxable_income < 4500):
         print("caculating…")
-"""
     elif Wages >= 4500 and < 9000:
         print('caculating…')
     elif Wages >= 9000 and < 35000:
@@ -26,6 +28,6 @@ if __name__ == '__main__':
         tax_rate = 0.45
         taxable_income = Wages - 3500
         tax_amount_payable = taxable_income * tax_rate - 13505 
-"""  
     else:
         print("低于起征点，努力赚钱哦")
+"""
