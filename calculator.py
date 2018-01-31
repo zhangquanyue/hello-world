@@ -8,26 +8,29 @@ if __name__ == '__main__':
         tax_rate = 0.03
         tax_amount_payable = taxable_income * tax_rate - 0
         print(format(tax_amount_payable,".2f"))
-    else:
-        print("abc")
-"""
-    elif (1500  <= taxable_income < 4500):
-        print("caculating…")
-    elif Wages >= 4500 and < 9000:
-        print('caculating…')
-    elif Wages >= 9000 and < 35000:
-        print('caculating')
-    elif Wages >= 35000 and < 55000:
-        pringt('caculating')
-    elif Wages >= 55000 and < 80000:
+    elif 1500 <= taxable_income < 4500:
+        tax_rate = 0.10
+        tax_amount_payable = taxable_income * tax_rate - 105
+        print(format(tax_amount_payable,".2f"))
+    elif 4500 <= taxable_income < 9000:
+        tax_rate = 0.20
+        tax_amount_payable = taxable_income * tax_rate - 555
+        print(format(tax_amount_payable,".2f"))
+    elif 9000 <= taxable_income < 35000:
+        tax_rate = 0.25
+        tax_amount_payable = taxable_income * tax_rate - 1005
+        print(format(tax_amount_payable,".2f"))
+    elif 35000 <= taxable_income < 55000:
+        tax_rate = 0.30
+        tax_amount_payable = taxable_income * tax_rate - 2755
+        print(format(tax_amount_payable,".2f"))
+    elif 55000 <= taxable_income < 80000:
         tax_rate = 0.35
-        taxable_income = Wages - 3500
         tax_amount_payable = taxable_income * tax_rate -5505
-        print(tax_amount_payable)
-    elif Wages > 80000:
+        print(format(tax_amount_payable,".2f"))
+    elif taxable_income >= 80000:
         tax_rate = 0.45
-        taxable_income = Wages - 3500
-        tax_amount_payable = taxable_income * tax_rate - 13505 
+        tax_amount_payable = taxable_income * tax_rate -13505
+        print(format(tax_amount_payable,".2f"))
     else:
-        print("低于起征点，努力赚钱哦")
-"""
+        print("低于起征点，努力加油哦")
