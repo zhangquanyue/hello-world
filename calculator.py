@@ -41,7 +41,7 @@ def Income(income):
         return remain
     else:
         return income - shebao
-if __name__ == '__main__':
+def main():
     for arg in sys.argv[1:]:
         employee_id, wage = arg.split(':')
         try:
@@ -49,4 +49,6 @@ if __name__ == '__main__':
         except ValueError:
             print('Parameter Error')
         after_tax_wages = Income(income)
-        print('{}:{}'.format(employee_id, after_tax_wages))
+        print('{}:{:.2f}'.format(employee_id, after_tax_wages))
+if __name__ == '__main__':
+    main()
